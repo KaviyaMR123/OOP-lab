@@ -8,17 +8,17 @@ class file
    {
     try
     {
-        System.out.println("Enter the text to insert : ");
+        System.out.print("Enter the text to insert : ");
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
         FileWriter file = new FileWriter("sample.txt");
         file.write(str);
         file.close();
-        System.out.println("\nText writted succesfully");
+        System.out.print("\nText writted succesfully");
     }
    catch(Exception e)
    {
-       System.out.println("\nError occurred");
+       System.out.print("\nError occurred");
    }
    try
    {
@@ -31,7 +31,7 @@ class file
    }
   catch(Exception e)
   {
-     System.out.println("\n Error occurred");
+     System.out.print("\n Error occurred");
   }
 }
 }
